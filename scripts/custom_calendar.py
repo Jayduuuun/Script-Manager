@@ -16,31 +16,31 @@ def run_script(option=""):
     for i in range(len(races)):
         if (races[i]) == "bah":
             track_ids.insert(i, 2)
-        elif (races[i]) == "aus":
-            track_ids.insert(i, 1)
         elif (races[i]) == "sau":
+            track_ids.insert(i, 1)
+        elif (races[i]) == "aus":
             track_ids.insert(i, 11)
-        elif (races[i]) == "imo":
-            track_ids.insert(i, 24)
-        elif (races[i]) == "mia":
-            track_ids.insert(i, 22)
-        elif (races[i]) == "bar":
-            track_ids.insert(i, 5)
-        elif (races[i]) == "mon":
-            track_ids.insert(i, 6)
         elif (races[i]) == "bak":
-            track_ids.insert(i, 4)
+            track_ids.insert(i, 24)
+        elif (races[i]) == "imo":
+            track_ids.insert(i, 22)
+        elif (races[i]) == "mon":
+            track_ids.insert(i, 5)
+        elif (races[i]) == "bar":
+            track_ids.insert(i, 6)
         elif (races[i]) == "can":
+            track_ids.insert(i, 4)
+        elif (races[i]) == "aut":
             track_ids.insert(i, 7)
         elif (races[i]) == "gbr":
             track_ids.insert(i, 10)
-        elif (races[i]) == "aut":
-            track_ids.insert(i, 9)
-        elif (races[i]) == "fra":
-            track_ids.insert(i, 8) 
         elif (races[i]) == "hun":
-            track_ids.insert(i, 12)
+            track_ids.insert(i, 9)
         elif (races[i]) == "bel":
+            track_ids.insert(i, 8) 
+        elif (races[i]) == "ned":
+            track_ids.insert(i, 12)
+        elif (races[i]) == "ita":
             track_ids.insert(i, 13)
         elif (races[i]) == "ita":
             track_ids.insert(i, 14)
@@ -56,8 +56,7 @@ def run_script(option=""):
             track_ids.insert(i, 20)
         elif (races[i]) == "uae":
             track_ids.insert(i, 21)  
-        elif (races[i]) == "ned":
-            track_ids.insert(i, 23)  
+    
     
     # Getting all the current season races
     day_season = cursor.execute("SELECT Day, CurrentSeason FROM Player_State").fetchone()
